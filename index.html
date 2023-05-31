@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Website content -->
+    <h1>Welcome to Ger's Garage</h1>
+  
+    <div class="form-container">
+      <h2>Register</h2>
+      <form>
+        <!-- Registration form -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+  
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+  
+        <!-- Vehicle details -->
+        <label for="vehicle-type">Vehicle Type:</label>
+        <select id="vehicle-type" name="vehicle-type">
+          <!-- Options for vehicle types -->
+        </select><br>
+  
+        <label for="vehicle-make">Vehicle Make:</label>
+        <select id="vehicle-make" name="vehicle-make">
+          <!-- Options for vehicle makes -->
+        </select><br>
+  
+        <label for="vehicle-license">Vehicle License:</label>
+        <input type="text" id="vehicle-license" name="vehicle-license" required><br>
+  
+        <label for="engine-type">Engine Type:</label>
+        <select id="engine-type" name="engine-type">
+          <!-- Options for engine types -->
+        </select><br>
+  
+        <label for="booking-type">Booking Type:</label>
+        <select id="booking-type" name="booking-type">
+          <!-- Options for booking types -->
+        </select><br>
+  
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea><br>
+  
+        <input type="submit" value="Register">
+      </form>
+    </div>
+  
+    <div class="form-container">
+      <h2>Login</h2>
+      <form>
+        <!-- Login form -->
+        <label for="login-phone">Phone:</label>
+        <input type="tel" id="login-phone" name="login-phone" required><br>
+  
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  
+    <!-- Admin section -->
+    <div class="form-container">
+      <h2>Admin Section</h2>
+      <form>
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required><br>
+  
+        <input type="submit" value="View Bookings">
+      </form>
+    </div>
+  
+    <!-- Schedule and invoice printing -->
+    <button onclick="printSchedule()">Print Schedule</button>
+    <button onclick="printInvoice()">Print Invoice</button>
+  
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
